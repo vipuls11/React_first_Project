@@ -1,0 +1,467 @@
+import React, { useState } from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import classes from "./Bannerslider.module.css";
+import "../index.css";
+function Image() {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
+
+  const BannerImage = [{}];
+  return (
+    <Slider
+      {...settings}
+      className="w-[90%] m-auto mt-5 mb-20 rounded-xl shadow-xl"
+    >
+      <img
+        src="https://www.power-x.in/cdn/shop/files/PowerX_Moniter_8ee55431-2c1d-4940-a536-3eb1cad66221.png?v=1708496342&width=1400"
+        alt="..."
+        className="rounded-xl "
+      />
+      <img
+        src="https://www.power-x.in/cdn/shop/files/PowerX_SSD_81807e39-57ef-4658-8b6f-078884d86121.png?v=1708496377&width=1400"
+        alt="..."
+        className="rounded-xl "
+      />
+      <img
+        src="https://www.power-x.in/cdn/shop/files/PowerX_Keyboard_and_Mouse_a35aad46-57b6-49fb-84db-dabf2ce26914.png?v=1708496395&width=1400"
+        alt="..."
+        className="rounded-xl"
+      />
+      <img
+        src="https://www.power-x.in/cdn/shop/files/PowerX_Cabinets_d9eae516-83d6-482d-9f90-65c3d4ab1f73.png?v=1708496413&width=1400"
+        alt="..."
+        className="rounded-xl "
+      />
+      <img
+        src="https://www.power-x.in/cdn/shop/files/PowerX_Motherboard_6cdb5c55-7391-4546-8c2f-66f092ba7f31.png?v=1708509736&width=1400"
+        alt="..."
+        className="rounded-xl "
+      />
+    </Slider>
+  );
+}
+
+function Motherboard() {
+  const motherboard = {
+    img: "https://www.power-x.in/cdn/shop/files/Garphic_Cards.png?v=1708512969&width=1400",
+    title: "Graphic Cards",
+    para: "Unleash silent power with our NVIDIA GeForce GT 730.",
+    btn1: "GT 610LP-2GB-DDR3",
+    btn2: "GT 730LP-4GB-DDR3",
+  };
+  return (
+    <div>
+      <div className="relative">
+        <img src={motherboard.img} alt="" />
+        <div className="absolute bottom-0 right-0 my-5">
+          <h5 className="text-4xl font-semibold">{motherboard.title}</h5>
+          <p className="text-lg font-semibold my-5">{motherboard.para}</p>
+          <button
+            type=""
+            className="border border-black bg-black text-white font-semibold py-2 px-4 mr-3 rounded-lg hover:opacity-"
+          >
+            {motherboard.btn1}
+          </button>
+          <button
+            type=""
+            className=" bg-blue-600 text-white font-semibold py-2 px-4 mr-3 rounded-lg hover:opacity-"
+          >
+            {motherboard.btn2}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Bannerslider() {
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+  };
+  const banner = {
+    title: "Bestseller Alert",
+    title2: "Trending Categories",
+    CardImage: [
+      {
+        img: "https://www.power-x.in/cdn/shop/files/PowerX_Monitor_8cf0b7eb-8a8e-4a4d-93e3-e79f0d5aea18.png?v=1708508177&width=300",
+        disc: "LED Monitors",
+      },
+
+      {
+        img: "https://www.power-x.in/cdn/shop/files/PowerX_Motherboards.png?v=1708508177&width=300",
+        disc: "Motherboard",
+      },
+
+      {
+        img: "https://www.power-x.in/cdn/shop/files/PowerX_SSD_9eb256e5-e935-4611-9a47-be09990cf042.png?v=1708508178&width=300",
+        disc: "SSD's",
+      },
+
+      {
+        img: "https://power-x.in/cdn/shop/files/PowerX_Keyboard_and_Mouse_e7f24201-c394-48a1-a05b-a7db59aae929.png?v=1708508177&width=300",
+        disc: "I/O Devices",
+      },
+
+      {
+        img: "https://www.power-x.in/cdn/shop/files/PowerX_Cabinets_63779ac8-8861-448b-8ce7-04a2066c7726.png?v=1708508177&width=300",
+        disc: "Cabinets",
+      },
+
+      {
+        img: "https://www.power-x.in/cdn/shop/files/PowerX_Toners_8343dc8b-cdd3-4921-9d8d-ceee98566a94.png?v=1708508825&width=300",
+        disc: "Toner Catridges",
+      },
+
+      {
+        img: "https://power-x.in/cdn/shop/files/PowerX_Graphic_Cards.png?v=1708508177&width=300",
+        disc: "Graphic Card",
+      },
+
+      {
+        img: "https://www.power-x.in/cdn/shop/files/PowerX_SMD_Smps.png?v=1708508178&width=300",
+        disc: "SMD SMPS",
+      },
+
+      {
+        img: "https://www.power-x.in/cdn/shop/files/PowerX_CPU_Cooler_Fans.png?v=1708508177&width=300",
+        disc: "Coolerfans",
+      },
+
+      {
+        img: "https://www.power-x.in/cdn/shop/files/PowerX_accessories.png?v=1708508177&width=300",
+        disc: "Cable and Accessories",
+      },
+
+      {
+        img: "https://www.power-x.in/cdn/shop/files/PowerX_speakers.png?v=1708508177&width=300",
+        disc: "Speaker",
+      },
+    ],
+  };
+  const Computerpart = banner.CardImage.map((item, index) => {
+    console.log(item);
+    return (
+      <div key={index} className="relative border-2 border-black text-center">
+        <img src={item.img} alt="" ClassName="" />
+        <p className="absolute bottom-2 left-10">{item.disc}</p>
+      </div>
+    );
+  });
+  return (
+    <div className="w-[90%] m-auto my-5">
+      <h5 className="text-blue-600 font-semibold">{banner.title}</h5>
+      <h2 className="text-3xl my-2 font-medium">{banner.title2}</h2>
+
+      {/* <div className="grid grid-cols-6 gap-5"> */}
+      <Slider {...settings} className={classes.slider_slide}>
+        {Computerpart}
+      </Slider>
+
+      {/* <div className="relative border-2 border-black">
+          <img src={banner.img} alt="" ClassName="" />
+          <p className="absolute bottom-2 left-2">{banner.disc}</p>
+        </div> */}
+      {/* <div className="relative border-2 border-black">
+          <img src={banner.img} alt="" ClassName="" />
+          <p className="absolute bottom-2 left-2">{banner.disc}</p>
+        </div>
+        <div className="relative border-2 border-black">
+          <img src={banner.img} alt="" ClassName="" />
+          <p className="absolute bottom-2 left-2">{banner.disc}</p>
+        </div>
+        <div className="relative border-2 border-black">
+          <img src={banner.img} alt="" ClassName="" />
+          <p className="absolute bottom-2 left-2">{banner.disc}</p>
+        </div>
+        <div className="relative border-2 border-black">
+          <img src={banner.img} alt="" ClassName="" />
+          <p className="absolute bottom-2 left-2">{banner.disc}</p>
+        </div>
+        <div className="relative border-2 border-black">
+          <img src={banner.img} alt="" ClassName="" />
+          <p className="absolute bottom-2 left-2">{banner.disc}</p>
+        </div> */}
+    </div>
+    // </div>
+  );
+}
+
+function LatestProduct() {
+  const product = {
+    title: "Explore",
+    title2: "Latest Products",
+    ProductImage: [
+      {
+        img1: "https://www.power-x.in/cdn/shop/files/111.jpg?v=1689769036&width=600",
+        img2: "https://www.power-x.in/cdn/shop/files/KW9A5869-removebg-preview.png?v=1689769036&width=300",
+        title: "19.0” HD LED MONITOR",
+        rupess: "Rs. 7,499.00",
+        deleterupees: "Rs. 8,499.00",
+        save: "save 12%",
+      },
+      {
+        img1: "https://www.power-x.in/cdn/shop/files/PowerX23.0.png?v=1707685899&width=300",
+        img2: "https://www.power-x.in/cdn/shop/files/KW9A5869-removebg-preview.png?v=1689769036&width=300",
+        title: "23.8” FHD FRAMELESS LED MONITOR",
+        rupess: "Rs. 25,999.00",
+        deleterupees: "Rs. 27,999.00",
+        save: "save 7%",
+      },
+      {
+        img1: "https://power-x.in/cdn/shop/files/PowerX650.png?v=1707687134&width=300",
+        img2: "https://www.power-x.in/cdn/shop/files/KW9A5869-removebg-preview.png?v=1689769036&width=300",
+        title: "PWX-650 SMD SMPS",
+        rupess: "Rs. 8,999.00",
+        deleterupees: "Rs. 9,999.00",
+        save: "save 10%",
+      },
+      {
+        img1: "https://www.power-x.in/cdn/shop/files/IMAGERETROLINK.png?v=1704181247&width=300",
+        img2: "https://www.power-x.in/cdn/shop/files/KW9A5869-removebg-preview.png?v=1689769036&width=300",
+        title: "USB WIRED KEYBOARD & MOUSE COMBO PWX-RETROLINK-7000",
+        rupess: "Rs. 2,499.00",
+        deleterupees: "Rs. 3,499.00",
+        save: "save 29%",
+      },
+      {
+        img1: "https://www.power-x.in/cdn/shop/files/IMAGEMouseRapidwave.png?v=1704182173&width=300",
+        img2: "https://www.power-x.in/cdn/shop/files/KW9A5869-removebg-preview.png?v=1689769036&width=300",
+        title: "USB WIRED GAMING MOUSE PWX-RAPIDWAVE-U30",
+        rupess: "Rs. 1,999.00",
+        deleterupees: "Rs. 2,999.00",
+        save: "save 33%",
+      },
+      {
+        img1: "https://www.power-x.in/cdn/shop/files/111.jpg?v=1689769036&width=6000",
+        img2: "https://www.power-x.in/cdn/shop/files/KW9A5869-removebg-preview.png?v=1689769036&width=300",
+        title: "V100 Basic",
+        rupess: "Rs. 2,999.00",
+        deleterupees: "Rs. 3,999.00",
+        save: "save 25%",
+      },
+      {
+        img1: "https://www.power-x.in/cdn/shop/files/111.jpg?v=1689769036&width=6000",
+        img2: "https://www.power-x.in/cdn/shop/files/KW9A5869-removebg-preview.png?v=1689769036&width=300",
+        title: "U500 ULTRA WHITE/BLACK",
+        rupess: "Rs. 4,999.00",
+        deleterupees: "Rs. 5,999.00",
+        save: "save 17%",
+      },
+      {
+        img1: "https://www.power-x.in/cdn/shop/files/111.jpg?v=1689769036&width=6000",
+        img2: "https://www.power-x.in/cdn/shop/files/KW9A5869-removebg-preview.png?v=1689769036&width=300",
+        title: "19.0” HD LED MONITOR",
+        rupess: "Rs. 7,499.00",
+        deleterupees: "Rs. 8,499.00",
+        save: "save 12%",
+      },
+      {
+        img1: "https://www.power-x.in/cdn/shop/files/111.jpg?v=1689769036&width=6000",
+        img2: "https://www.power-x.in/cdn/shop/files/KW9A5869-removebg-preview.png?v=1689769036&width=300",
+        title: "19.0” HD LED MONITOR",
+        rupess: "Rs. 7,499.00",
+        deleterupees: "Rs. 8,499.00",
+        save: "save 12%",
+      },
+    ],
+  };
+  const LatestProductdetails = product.ProductImage.map((item, pos) => {
+    console.log(item, "nkbfjbjhdf");
+    return (
+      <div>
+        <div className="relative mb-5">
+          <img src={item.img1} className="w-full h-full" />
+          <div className="absolute top-0 left-0 opacity-0 w-full h-full hover:opacity-100 hover:bg-white">
+            <img src={item.img2} />
+          </div>
+          <span className="absolute top-2 left-2 text-white rounded-xl text-xs bg-red-600 px-2 py-0.5">
+            {item.save}
+          </span>
+        </div>
+        <div className="p-3">
+          <h4 className="font-semibold">{item.title}</h4>
+          <p className="text-lg text-red-600">{item.rupess}</p>
+          <del className="text-gray-500 text-sm">{item.deleterupees}</del>
+        </div>
+      </div>
+    );
+  });
+
+  return (
+    <div className="w-[90%] m-auto my-5">
+      <h5 className="text-blue-600 font-semibold">{product.title}</h5>
+      <h2 className="text-3xl my-2 font-medium">{product.title2}</h2>
+
+      <div className="grid lg:grid-cols-5 md:grid-cols-3 gap-5">
+        {LatestProductdetails}
+      </div>
+    </div>
+  );
+}
+
+function Printer() {
+  const dataprinter = {
+    printering:
+      "https://www.power-x.in/cdn/shop/files/TonersPowerX.png?v=1708514680&width=1400",
+    parabold: "Streamlined Solutions",
+    para: "for Toner Refills and Waste Management",
+    heading: "Toner Cartridges",
+    btn1: " Q2612A",
+    btn2: " CC388A",
+    btn3: " CRG925",
+    btn4: "CRG337",
+  };
+  return (
+    <div>
+      <div className="bg-[url('https://www.power-x.in/cdn/shop/files/TonersPowerX.png?v=1708514680&width=1400')] h-screen w-full bg-no-repeat bg-center bg-origin-content">
+        {/* <img src="" /> */}
+        <div className=" flex items-end justify-center lg:pb-24 pb-14 h-full text-center">
+          <div>
+            <h3 className="text-3xl font-extrabold">{dataprinter.heading}</h3>
+            <p className="py-4">
+              <b className="">{dataprinter.parabold}</b> {dataprinter.para}
+            </p>
+            <div className="">
+              <div>
+                <button type="" className="px-6 py-2  bg-blue-500 rounded-lg">
+                  {dataprinter.btn1}
+                </button>
+                <button
+                  type=""
+                  className="px-6 py-2 mx-2 bg-blue-500 rounded-lg"
+                >
+                  {dataprinter.btn2}
+                </button>
+                <button type="" className="px-6 py-2 bg-blue-500 rounded-lg">
+                  {dataprinter.btn3}
+                </button>
+                <button
+                  type=""
+                  className="px-6 py-2 mx-2  bg-blue-500 rounded-lg"
+                >
+                  {dataprinter.btn4}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+const ProductShow = () => {
+  const [Image, setImage] = useState(
+    "https://www.power-x.in/cdn/shop/files/ScreenCleaningkit1.png?v=1708525058&width=600"
+  );
+  const product = {
+    mein_image:
+      "https://www.power-x.in/cdn/shop/files/ScreenCleaningkit1.png?v=1708525058&width=600",
+    head: "Premium Screen Cleaning Kit",
+    head1: "PX-S61",
+    rupess: "Rs. 1,499.00",
+    discountprice: "Rs. 1,999.00",
+    span: "Save 25%",
+    btn1: "Add to cart",
+    btn2: "Buy it now",
+  };
+  const productlist = [
+    {
+      id: "1",
+      img: "https://www.power-x.in/cdn/shop/files/ScreenCleaningkit1.png?v=1708525058&width=600",
+    },
+    {
+      id: "2",
+      img: "https://www.power-x.in/cdn/shop/files/ScreenCleaningkit2.png?v=1708525057&width=600",
+    },
+    {
+      id: "3",
+      img: "https://www.power-x.in/cdn/shop/files/ScreenCleaningkit3.png?v=1708525057&width=700",
+    },
+    {
+      id: "4",
+      img: "https://www.power-x.in/cdn/shop/files/ScreenCleaningkit4.png?v=1708525058&width=600",
+    },
+  ];
+  const productClick = (item) => {
+    console.log(item, "HandleClick");
+    setImage(item.img);
+  };
+  return (
+    <div className="w-[95%] m-auto my-5 bg-gray-300 p-5 rounded-xl">
+      <div className="grid lg:grid-cols-2 gap-10">
+        <div>
+          <div class="flex items-center gap-5">
+            <div class="">
+              {productlist.map((item, index) => {
+                console.log(productlist, "productlist ");
+                return (
+                  <img
+                    src={item.img}
+                    key={index}
+                    className="w-20 my-2"
+                    onClick={() => productClick(item)}
+                  />
+                );
+              })}
+            </div>
+            <div className="">
+              <img src={Image} alt="Mein Image" className="rounded-xl w-100" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <p className="text-2xl mb-5">{product.head}</p>
+          <h4 className="text-3xl font-semibold my-5">{product.head1}</h4>
+          <p className="flex gap-5 items-end pb-5 border-b border-b-white">
+            <span className="text-red-600 text-2xl">{product.rupess}</span>
+            <del className="text-xl">{product.discountprice}</del>
+            <span className="bg-red-600 text-white text-sm px-4 py-1 rounded-lg">
+              {product.span}
+            </span>
+          </p>
+
+          <div className="flex justify-between py-5 my-5 text-lg border-y border-y-white">
+            <h4>Description</h4>
+            <span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </span>
+          </div>
+          <label htmlFor="" className="text-lg">
+            Quantity :
+          </label>
+          <div className="flex items-center gap-5 border rounded-lg my-3 py-2 px-4 border-black text-xl w-40 mb-10">
+            <button className="px-3 text-2xl ">-</button>
+            <span>2</span>
+            <button className="px-3 text-2xl">+</button>
+          </div>
+          <button className="mr-4 px-8 py-2 rounded-lg font-semibold text-lg bg-blue-400 text-white">
+            {product.btn1}
+          </button>
+          <button className=" px-8 py-2 rounded-lg font-semibold text-lg bg-black text-white">
+            {product.btn2}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Bannerslider;
+export { Image, Motherboard, LatestProduct, Printer, ProductShow };
