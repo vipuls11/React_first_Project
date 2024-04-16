@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import Tutpra from "./Tutpra";
@@ -9,9 +10,16 @@ import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/watch" element={<Watch />} />
+        <Route path="/tutpra" element={<Tutpra />} />
+      </Routes>
+    </BrowserRouter>
     {/* <App /> */}
-    {/* <Watch /> */}
-    <Tutpra />
+    {/* <Watch />   */}
+    {/* <Tutpra /> */}
   </React.StrictMode>
 );
 

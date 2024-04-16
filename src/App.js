@@ -9,6 +9,7 @@ import Bannerslider, {
   ProductShow,
 } from "./powerxproject/Bannerslider";
 import "./App.css";
+import Footer from "./powerxproject/Footer";
 
 function App() {
   // const App = () => {
@@ -23,6 +24,7 @@ function App() {
         <div class="">{LatestProduct()}</div>
         <div>{Printer()}</div>
         <div>{ProductShow()}</div>
+        <Footer />
       </div>
     </div>
   );
