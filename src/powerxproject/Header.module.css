@@ -47,4 +47,5 @@ align-items: center;
 
 .Menu:hover .Submenu{
     display: block;
+    z-index: 100;
 }

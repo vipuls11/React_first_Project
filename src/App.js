@@ -9,6 +9,7 @@ import Bannerslider, {
   ProductShow,
   CPUcooling,
   CardRead,
+  Ram,
 } from "./powerxproject/Bannerslider";
 import "./App.css";
 import Footer from "./powerxproject/Footer";
@@ -28,6 +29,7 @@ function App() {
         <div>{ProductShow()}</div>
         <div className="">{CPUcooling()}</div>
         <div>{CardRead()}</div>
+        <div>{Ram()}</div>
         <Footer />
       </div>
     </div>

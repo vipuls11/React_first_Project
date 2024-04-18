@@ -10,6 +10,7 @@
     overflow: hidden;
     overflow-y: scroll;
     text-align: center;
+   
 }
 
 .Productlist li{
@@ -20,4 +21,5 @@
 
 .Productlist li:hover{
     background-color: rgb(212, 209, 212);
+   
 }

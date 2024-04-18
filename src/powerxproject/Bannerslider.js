@@ -4,7 +4,9 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import classes from "./Bannerslider.module.css";
 import { Button, Popover } from "flowbite-react";
+
 import "../index.css";
+import Example from "./Example";
 function Image() {
   var settings = {
     dots: true,
@@ -720,6 +722,43 @@ const CardRead = () => {
   );
 };
 
+const Ram = () => {
+  return (
+    <>
+      <div className="w-[95%] m-auto my-5">
+        <div className="flex gap-5">
+          <div class=" py-5">
+            <div className="mb-5">
+              <h3 className="text-3xl font-semibold mb-8">RAM's</h3>
+              <p>Dominate Every Task with Our Premium Quality RAM Modules</p>
+            </div>
+            <div className="leading-10 my-5">
+              <h5 className="text-md font-semibold">LAPTOP RAMS</h5>
+              <ul>
+                <li>DDR3 1600 - 16IC - 4GB / 8GB</li>
+                <li>DDR4 2666 - 4GB / 8GB / 16GB / 32GB</li>
+                <li>DDR4 3200 - 4GB / 8GB / 16GB / 32GB</li>
+              </ul>
+            </div>
+
+            <div className="leading-10 mt-5">
+              <h5 className="text-md font-semibold">DESKTOP RAMS</h5>
+              <ul>
+                <li>DDR3 1600 - 16IC - 4GB / 8GB</li>
+                <li>DDR4 2666 - 4GB / 8GB / 16GB / 32GB</li>
+                <li>DDR4 3200 - 4GB / 8GB / 16GB / 32GB</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <Example />
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
 export default Bannerslider;
 export {
   Image,
@@ -729,4 +768,5 @@ export {
   ProductShow,
   CPUcooling,
   CardRead,
+  Ram,
 };
