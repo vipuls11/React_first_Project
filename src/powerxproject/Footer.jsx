@@ -103,7 +103,7 @@ const Footer=()=>{
                 <div className='col-span-2 '>
                     <h2 className='font-semibold text-4xl mb-5'>Subscribe to PowerX newsletter</h2>
 
-                    <div className='flex items-center border-2 border-black w-3/5  bg-red-100'>
+                    <div className='flex items-center border border-black w-3/5 rounded-lg'>
                         {/* <div className="bg-white w-100">
                          <FloatingLabel
                          variant="filled"
@@ -111,7 +111,7 @@ const Footer=()=>{
                         helperText=""
                              />
                             </div> */}
-                            <input className='w-full py-2 outline-none focus:ring-0 px-4' placeholder='E-mail'/>
+                            <input className='w-full py-2 outline-none focus:ring-0 px-4 rounded-l-lg' placeholder='E-mail'/>
                         <span className='text-xl mx-2 text-gray-500'><i class="fa-regular fa-circle-right"></i></span>
                     </div>
                 </div>

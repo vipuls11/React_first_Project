@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import classes from "./Bannerslider.module.css";
+import { Button, Popover } from "flowbite-react";
 import "../index.css";
 function Image() {
   var settings = {
@@ -463,5 +464,269 @@ const ProductShow = () => {
   );
 };
 
+const CPUcooling = () => {
+  return (
+    <div className="w-[95%] m-auto">
+      <div className="">
+        <h6 className="text-md font-semibold">Chill Your Worries Away</h6>
+        <h2 className="text-3xl font-semibold my-5">
+          The Ultimate CPU Cooling Experience
+        </h2>
+        <p>Unleash Peak Performance</p>
+        <button
+          type=""
+          className="my-5 bg-blue-600 text-white px-6 py-3 font-semibold rounded-lg"
+        >
+          Learn more
+        </button>
+
+        <table className="w-full my-10">
+          <tbody>
+            <tr className="">
+              <td className="w-96"></td>
+              <td className="">
+                <div className="grid place-items-start pl-3">
+                  <img
+                    src="https://www.power-x.in/cdn/shop/files/Frame20Ultra.png?v=1708523278&width=150"
+                    alt="hello"
+                  />
+                </div>
+                <h4 className="font-semibold mt-2">Ultra CPU Cooler</h4>
+                <p className=" my-2">
+                  <span className="text-red-600 mr-2 text-lg">
+                    Rs. 2,999.00
+                  </span>
+                  <del className="text-grey-400">Rs. 3,999.00</del>
+                </p>
+                <button className="mt-3 mb-10 py-2 px-4 bg-gray-300 font-medium rounded-lg">
+                  View
+                </button>
+              </td>
+              <td className="">
+                <div className="grid place-items-start pl-3">
+                  <img
+                    src="https://www.power-x.in/cdn/shop/files/Frame20Ultra.png?v=1708523278&width=150"
+                    alt="hello"
+                  />
+                </div>
+                <h4 className="font-semibold mt-2">Ultra CPU Cooler</h4>
+                <p className=" my-2">
+                  <span className="text-red-600 mr-2 text-lg">
+                    Rs. 2,999.00
+                  </span>
+                  <del className="text-grey-400">Rs. 3,999.00</del>
+                </p>
+                <button className="mt-3 mb-10 py-2 px-4 bg-gray-300 font-medium rounded-lg">
+                  View
+                </button>
+              </td>
+              <td className="">
+                <div className="grid place-items-start pl-3">
+                  <img
+                    src="https://www.power-x.in/cdn/shop/files/Frame20Ultra.png?v=1708523278&width=150"
+                    alt="hello"
+                  />
+                </div>
+                <h4 className="font-semibold mt-2">Ultra CPU Cooler</h4>
+                <p className=" my-2">
+                  <span className="text-red-600 mr-2 text-lg">
+                    Rs. 2,999.00
+                  </span>
+                  <del className="text-grey-400">Rs. 3,999.00</del>
+                </p>
+                <button className="mt-3 mb-10 py-2 px-4 bg-gray-300 font-medium rounded-lg">
+                  View
+                </button>
+              </td>
+            </tr>
+
+            <tr className="border-y-2 border-gray-300  ">
+              <th className="py-5 ">Lightweight</th>
+              <td>Weighs 300g</td>
+              <td>Weighs 200g+/-5g</td>
+              <td>Weighs 175g+/-5g</td>
+            </tr>
+
+            <tr className="border-y-2 border-gray-300  ">
+              <th className="py-5 ">Support</th>
+              <td>Processor 12th & 13th Generation</td>
+              <td>All Processors 1st Gen to 11th Generation</td>
+              <td>All Processors 1st Gen to 11th Generation</td>
+            </tr>
+
+            <tr className="border-y-2 border-gray-300  ">
+              <th className="py-5 ">Speed Range</th>
+              <td>Operates at 800-3000rpm range for customizable cooling</td>
+              <td>Operates at 900-2900rpm+/-10% for customizable fan speed.</td>
+              <td>Operates at 2300rpm+/-10% for effective heat dissipation</td>
+            </tr>
+
+            <tr className="border-y-2 border-gray-300  ">
+              <th className="py-5 ">PWM Control</th>
+              <td>Precise temperature regulation</td>
+              <td>Allows dynamic control</td>
+              <td>Enhances cooling efficiency</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+};
+
+const CardRead = () => {
+  const Cradread =
+    "https://www.power-x.in/cdn/shop/files/Card_Desktop_final.png?v=1708521686&width=1400";
+
+  const content1 = (
+    <div className="w-64 text-sm text-gray-500 dark:text-gray-400">
+      <div className="border-b border-gray-200 bg-gray-100 px-3 py-2 dark:border-gray-600 dark:bg-gray-700">
+        <h3 className="font-semibold text-gray-900 dark:text-white">
+          Reliable USB 3.0 Card Reader
+        </h3>
+      </div>
+      <div className="px-3 py-2">
+        <p>
+          Forget about complicated installations and driver downloads. Our USB
+          3.0 Card Reader offers plug-and-play convenience, allowing you to
+          simply plug it into your device and start transferring files
+          immediately. Enjoy seamless connectivity and effortless data
+          management with this user-friendly device.
+        </p>
+      </div>
+    </div>
+  );
+
+  const content2 = (
+    <div className="w-64 text-sm text-gray-500 dark:text-gray-400">
+      <div className="border-b border-gray-200 bg-gray-100 px-3 py-2 dark:border-gray-600 dark:bg-gray-700">
+        <h3 className="font-semibold text-gray-900 dark:text-white">
+          Reliable USB 3.0 Card Reader
+        </h3>
+      </div>
+      <div className="px-3 py-2">
+        <p>
+          Forget about complicated installations and driver downloads. Our USB
+          3.0 Card Reader offers plug-and-play convenience, allowing you to
+          simply plug it into your device and start transferring files
+          immediately. Enjoy seamless connectivity and effortless data
+          management with this user-friendly device.
+        </p>
+      </div>
+    </div>
+  );
+
+  const content3 = (
+    <div className="w-64 text-sm text-gray-500 dark:text-gray-400">
+      <div className="border-b border-gray-200 bg-gray-100 px-3 py-2 dark:border-gray-600 dark:bg-gray-700">
+        <h3 className="font-semibold text-gray-900 dark:text-white">
+          Reliable USB 3.0 Card Reader
+        </h3>
+      </div>
+      <div className="px-3 py-2">
+        <p>
+          Forget about complicated installations and driver downloads. Our USB
+          3.0 Card Reader offers plug-and-play convenience, allowing you to
+          simply plug it into your device and start transferring files
+          immediately. Enjoy seamless connectivity and effortless data
+          management with this user-friendly device.
+        </p>
+      </div>
+    </div>
+  );
+
+  const content4 = (
+    <div className="w-64 text-sm text-gray-500 dark:text-gray-400">
+      <div className="border-b border-gray-200 bg-gray-100 px-3 py-2 dark:border-gray-600 dark:bg-gray-700">
+        <h3 className="font-semibold text-gray-900 dark:text-white">
+          Reliable USB 3.0 Card Reader
+        </h3>
+      </div>
+      <div className="px-3 py-2">
+        <p>
+          Forget about complicated installations and driver downloads. Our USB
+          3.0 Card Reader offers plug-and-play convenience, allowing you to
+          simply plug it into your device and start transferring files
+          immediately. Enjoy seamless connectivity and effortless data
+          management with this user-friendly device.
+        </p>
+      </div>
+    </div>
+  );
+
+  return (
+    <>
+      <div className="relative">
+        <div className="lg:absolute lg:top-12 lg:left-24 lg:w-96 w-[95%] lg:m-0 m-auto">
+          <h3 className="text-3xl font-semibold">
+            High-Speed 6 in 1 Card Reader
+          </h3>
+          <h6 className="mt-8 mb-1 font-bold text-md">
+            Plug-and-play convenience
+          </h6>
+          <p className="leading-7 tracking-wide">
+            Compatible with a wide range of memory card formats, including SDXC,
+            SDHC, SD, MMC, RS-MMC, Micro SDXC, Micro SD, Micro SDHC, and UHS-I
+            Cards.
+          </p>
+          <button
+            type=""
+            className="px-6 py-3 bg-blue-500 text-white my-3 rounded-lg font-semibold"
+          >
+            Buy Now
+          </button>
+        </div>
+        <img src={Cradread} />
+
+        <div className="absolute top-28 right-1/4">
+          <Popover content={content1} placement="right">
+            <Button className="rounded-full ">
+              <span class="text-lg font-bold">
+                <i class="fa-solid fa-plus"></i>
+              </span>
+            </Button>
+          </Popover>
+        </div>
+        <div className="absolute top-2/3 left-1/4">
+          <Popover content={content2} placement="right">
+            <Button className="rounded-full ">
+              <span class="text-lg font-bold">
+                <i class="fa-solid fa-plus"></i>
+              </span>
+            </Button>
+          </Popover>
+        </div>
+        <div className="absolute top-2/3 right-1/3">
+          <Popover content={content3} placement="right">
+            <Button className="rounded-full ">
+              <span class="text-lg font-bold">
+                <i class="fa-solid fa-plus"></i>
+              </span>
+            </Button>
+          </Popover>
+        </div>
+
+        <div className="absolute top-96 right-24">
+          <Popover content={content4} placement="right">
+            <Button className="rounded-full ">
+              <span class="text-lg font-bold">
+                <i class="fa-solid fa-plus"></i>
+              </span>
+            </Button>
+          </Popover>
+        </div>
+      </div>
+    </>
+  );
+};
+
 export default Bannerslider;
-export { Image, Motherboard, LatestProduct, Printer, ProductShow };
+export {
+  Image,
+  Motherboard,
+  LatestProduct,
+  Printer,
+  ProductShow,
+  CPUcooling,
+  CardRead,
+};
