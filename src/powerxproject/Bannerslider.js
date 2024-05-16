@@ -96,6 +96,18 @@ function Bannerslider() {
     speed: 2000,
     autoplaySpeed: 2000,
     cssEase: "linear",
+    beforeChange: (current, next) => {
+      const slides = document.querySelectorAll(".slick-slide");
+      slides.forEach((slide) => {
+        slide.style.marginLeft = "0";
+      });
+      const nextSlide = document.querySelector(
+        `.slick-slide[data-slick-index="${next}"]`
+      );
+      if (nextSlide) {
+        nextSlide.style.marginLeft = "10px";
+      }
+    },
   };
   const banner = {
     title: "Bestseller Alert",
@@ -172,7 +184,7 @@ function Bannerslider() {
       <h2 className="text-3xl my-2 font-medium">{banner.title2}</h2>
 
       {/* <div className="grid grid-cols-6 gap-5"> */}
-      <Slider {...settings} className={classes.slider_slide}>
+      <Slider {...settings} className={`${classes.slider_slide}`}>
         {Computerpart}
       </Slider>
 
